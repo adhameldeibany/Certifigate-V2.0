@@ -53,7 +53,7 @@ class _AboutScreenState extends State<AboutScreen> {
             ),
             SizedBox(height: 5.h,),
             SizedBox(
-              height: 120.h,
+              height: 150.h,
               width: 328.w,
               child: TextFormField(
                 minLines: 10,
@@ -85,10 +85,11 @@ class _AboutScreenState extends State<AboutScreen> {
       bottomNavigationBar: Container(
         width: MediaQuery.of(context).size.width,
         color: background,
-        height: 120,
+        height: 100.h,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
                 onTap: (){

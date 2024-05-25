@@ -35,7 +35,10 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 Transform.scale(
                     scale: 0.6,
-                    child: Image(image: AssetImage('assets/logo.png'))
+                    child: Image(
+                      width: 150.w,
+                        height: 150.h,
+                        image: AssetImage('assets/logo.png'))
                 ),
                 Container(
                   width: 328.w,
@@ -150,7 +153,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: [
                             SizedBox(
                                 height: 0.3.h,
-                                width: MediaQuery.of(context).size.width/4,
+                                width: MediaQuery.of(context).size.width/4.8,
                                 child: Divider(color: Colors.grey)
                             ),
                             SizedBox(width: 10.w,),
@@ -158,7 +161,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             SizedBox(width: 10.w,),
                             SizedBox(
                                 height: 0.3.h,
-                                width: MediaQuery.of(context).size.width/4,
+                                width: MediaQuery.of(context).size.width/4.8,
                                 child: Divider(color: Colors.grey)
                             ),
                           ],
@@ -243,7 +246,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 32.h,),
+                SizedBox(height: 25.h,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -258,6 +261,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ],
                 ),
+                SizedBox(height: 15.h,),
               ],
             ),
           ),

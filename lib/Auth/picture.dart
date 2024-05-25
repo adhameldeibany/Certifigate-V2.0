@@ -108,10 +108,11 @@ class _PictureScreenState extends State<PictureScreen> {
       bottomNavigationBar: Container(
         width: MediaQuery.of(context).size.width,
         color: background,
-        height: 120,
+        height: 100.h,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
                 onTap: (){

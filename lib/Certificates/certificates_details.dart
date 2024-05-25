@@ -240,7 +240,7 @@ class _CertificatesDetailsState extends State<CertificatesDetails> {
                         ],
                       ),
                       Container(
-                        constraints: BoxConstraints(maxHeight: 280.h),
+                        constraints: BoxConstraints(maxHeight: 300.h),
                         child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             shrinkWrap: true,
@@ -250,7 +250,7 @@ class _CertificatesDetailsState extends State<CertificatesDetails> {
                                 children: [
                                   Container(
                                     width: 242.w,
-                                    height: 280.h,
+                                    height: 300.h,
                                     decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(12),
@@ -343,7 +343,7 @@ class _CertificatesDetailsState extends State<CertificatesDetails> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 8.h,),
+                      SizedBox(height: 12.h,),
                       InkWell(
                         onTap: (){},
                         child: Container(
@@ -365,7 +365,302 @@ class _CertificatesDetailsState extends State<CertificatesDetails> {
                   ),
                   ListView(
                     children: [
-
+                      SizedBox(height: 24.h,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 156.w,
+                            height: 75.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                children: [
+                                  Transform.scale(
+                                    scale: 1.2,
+                                      child: Image(image: AssetImage('assets/eventT.png'))
+                                  ),
+                                  SizedBox(width: 8.w,),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('Issued on',
+                                        style: TextStyle(color: Colors.grey, fontSize: 12.sp),
+                                      ),
+                                      SizedBox(height: 3.h,),
+                                      Text('May 14, 2024',
+                                        style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 156.w,
+                            height: 75.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                children: [
+                                  Transform.scale(
+                                      scale: 1.2,
+                                      child: Image(image: AssetImage('assets/eventX.png'))
+                                  ),
+                                  SizedBox(width: 8.w,),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text('Expires on',
+                                        style: TextStyle(color: Colors.grey, fontSize: 12.sp),
+                                      ),
+                                      SizedBox(height: 3.h,),
+                                      Text('Does not expire',
+                                        style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 24.h,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 156.w,
+                            height: 64.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.calendar_month_outlined, size: 24.sp,),
+                                  Text('Diploma',
+                                    style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 156.w,
+                            height: 64.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.remove_red_eye_outlined, size: 24.sp,),
+                                  Text('Validation',
+                                    style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 16.h,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 156.w,
+                            height: 64.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.signal_cellular_alt_outlined, size: 24.sp,),
+                                  Text('Intermediate',
+                                    style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 156.w,
+                            height: 64.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(FontAwesomeIcons.medal, size: 24.sp,),
+                                  Text('Validation',
+                                    style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 16.h,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 156.w,
+                            height: 64.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.paid_outlined, size: 24.sp,),
+                                  Text('Paid',
+                                    style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 156.w,
+                            height: 64.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.access_time, size: 24.sp,),
+                                  Text('Days',
+                                    style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 16.h,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 156.w,
+                            height: 64.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.location_on_outlined, size: 24.sp,),
+                                  Text('Online',
+                                    style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 156.w,
+                            height: 64.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(Icons.menu_book_outlined, size: 24.sp,),
+                                  Text('Diploma',
+                                    style: TextStyle(color: Colors.black, fontSize: 12.sp, fontWeight: FontWeight.w600),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 30.h,),
+                      InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 328.w,
+                          height: 40.h,
+                          decoration: BoxDecoration(
+                            color: Color(0xff0077B5),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(image: AssetImage('assets/linkedin.png')),
+                              SizedBox(width: 5.w,),
+                              Text('Add to LinkedIn',
+                                style: TextStyle(fontSize: 14.sp, color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 12.h,),
+                      InkWell(
+                        onTap: (){},
+                        child: Container(
+                          width: 328.w,
+                          height: 40.h,
+                          decoration: BoxDecoration(
+                            color: primary,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Center(
+                            child: Text('Share',
+                              style: TextStyle(fontSize: 14.sp, color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 16.h,),
                     ],
                   ),
                 ]),

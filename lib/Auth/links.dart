@@ -264,18 +264,18 @@ class _LinkScreenState extends State<LinkScreen> {
                 InkWell(
                   onTap: (){},
                   child: Container(
-                    width: 100.w,
+                    width: 120.w,
                     height: 40.h,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(color: primary)
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 5.h),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(Icons.add, color: primary,),
+                          Icon(Icons.add, color: primary, ),
                           SizedBox(width: 5.w,),
                           Text('Add link',
                             style: TextStyle(color: primary),
@@ -293,10 +293,11 @@ class _LinkScreenState extends State<LinkScreen> {
       bottomNavigationBar: Container(
         width: MediaQuery.of(context).size.width,
         color: background,
-        height: 120,
+        height: 100.h,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
                 onTap: (){

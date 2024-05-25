@@ -380,7 +380,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   Icon(Icons.work_outline, color: Colors.grey,),
                                   SizedBox(width: 8.w,),
                                   SizedBox(
-                                    width: 265.w,
+                                    width: 260.w,
                                     child: Text('UX/UI Designer at Flocker labs',
                                       style: TextStyle(fontSize: 14.sp, color: Colors.grey[500]),
                                     ),
@@ -394,7 +394,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   Icon(Icons.info_outline, color: Colors.grey,),
                                   SizedBox(width: 8.w,),
                                   SizedBox(
-                                    width: 265.w,
+                                    width: 260.w,
                                     child: Text('Corem ipsum dolor sit amet, consectetur adipiscing elit. Corem ipsum dolor sit amet, consectetur adipiscing elit.',
                                       style: TextStyle(fontSize: 14.sp, color: Colors.grey[500]),
                                     ),
@@ -407,8 +407,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 children: [
                                   Icon(Icons.location_on_outlined, color: Colors.grey,),
                                   SizedBox(width: 8.w,),
-                                  Text('Cairo',
-                                    style: TextStyle(fontSize: 14.sp, color: Colors.grey[500]),
+                                  SizedBox(
+                                    width: 260.w,
+                                    child: AutoSizeText('Cairo',
+                                      maxLines: 2,
+                                      style: TextStyle(fontSize: 14.sp, color: Colors.grey[500]),
+                                    ),
                                   ),
                                 ],
                               ),

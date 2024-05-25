@@ -99,10 +99,11 @@ class _NameScreenState extends State<NameScreen> {
       bottomNavigationBar: Container(
         width: MediaQuery.of(context).size.width,
         color: background,
-        height: 100,
+        height: 80.h,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
                 onTap: (){
