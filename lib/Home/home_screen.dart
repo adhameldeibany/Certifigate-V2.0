@@ -1,10 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:certifigate/Badges/badges_details.dart';
-import 'package:certifigate/Certificates/certificates_details.dart';
 import 'package:certifigate/Methods/colors_methods.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -156,9 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
                                                 InkWell(
-                                                  onTap: (){
-                                                    Get.to(CertificatesDetails());
-                                                  },
+                                                  onTap: (){},
                                                   child: Container(
                                                     width: 144.w,
                                                     height: 32.h,
@@ -245,9 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
                                                 InkWell(
-                                                  onTap: (){
-                                                    Get.to(BadgesDetails());
-                                                  },
+                                                  onTap: (){},
                                                   child: Container(
                                                     width: 144.w,
                                                     height: 32.h,

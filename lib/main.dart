@@ -1,6 +1,3 @@
-import 'package:certifigate/Auth/Auth2/signup_screen.dart';
-import 'package:certifigate/Home/home_main.dart';
-import 'package:certifigate/Profile/profile_screen.dart';
 import 'package:certifigate/Splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

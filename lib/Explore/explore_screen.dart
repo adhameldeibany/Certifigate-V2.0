@@ -16,6 +16,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
       appBar: AppBar(
         backgroundColor: background,
       ),
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }

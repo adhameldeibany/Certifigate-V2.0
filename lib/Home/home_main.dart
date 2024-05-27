@@ -1,6 +1,5 @@
 import 'package:certifigate/Explore/explore_screen.dart';
 import 'package:certifigate/Methods/colors_methods.dart';
-import 'package:certifigate/Profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -16,7 +15,7 @@ class _HomeMainState extends State<HomeMain> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
-  List pages = [HomeScreen(), ExploreScreen(), ProfileScreen()];
+  List pages = [HomeScreen(), ExploreScreen()];
 
   @override
   Widget build(BuildContext context) {
